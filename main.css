@@ -1,7 +1,18 @@
 body {
-  background: #000;
+  background: ;
 }
 
 h1 {
   color: #FF2734;
+}
+
+.parallax-container {
+  min-height: 420px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+
+.parallax-container .section {
+  width: 100%;
 }
