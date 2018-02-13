@@ -1,9 +1,45 @@
-body {
-  background: ;
+/*  GOOGLE FONTS
+font-family: 'Playfair Display', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+/*color pallete*/
+:root {
+  --almond:    #eee1cf;
+  --sage:      #aab6b5;
+  --fog:       #656275;
+  --berry:     #30486a;
+  --moss:      #77a1a4;
+  --miami:     #52c4a7;
+  --tangerine: #e5b55b;
 }
 
-h1 {
-  color: #FF2734;
+nav {
+
+  a {
+    color: var(--almond);
+  }
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /*background: var(--fog);*/
+}
+
+.berry {
+  background: var(--berry)
+}
+
+.brand-logo {
+    margin-left: 20px;
+}
+
+.moss {
+  background: var(--moss)
+}
+
+.parallax img {
+   opacity: 0.3;
 }
 
 .parallax-container {
@@ -15,4 +51,17 @@ h1 {
 
 .parallax-container .section {
   width: 100%;
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.row h1 {
+  color: var(--miami);
+  text-shadow: var(--fog) 2px 2px;
+}
+
+.sage {
+  background: var(--sage)
 }
