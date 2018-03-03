@@ -13,12 +13,18 @@ font-family: 'Montserrat', sans-serif;
   --tangerine: #e5b55b;
 }
 
-nav {
-
-  a {
+nav a {
     color: var(--almond);
-  }
+}
+nav ul {
+  margin-right: 20px;
+}
 
+ul {
+  margin-right: 10px;
+}
+#about {
+  height: 50px;
 }
 
 body {
@@ -40,8 +46,8 @@ body {
 
 .parallax img {
   background: var(--berry);
-  filter: grayscale(70%) brightness(60%);
-  opacity: 0.3;
+  /*filter: grayscale(70%) brightness(60%);*/
+  opacity: 1;
 }
 
 .parallax-container {
@@ -66,4 +72,13 @@ body {
 
 .sage {
   background: var(--sage)
+}
+
+#splash {
+  background-image: url(./img/yellowPencil.jpg);
+  background-size: cover;
+}
+
+table td{
+  font-weight: 800;
 }
