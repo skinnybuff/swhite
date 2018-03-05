@@ -73,6 +73,13 @@ body {
 .sage {
   background: var(--sage)
 }
+#projects {
+  background: linear-gradient(white, var(--almond));
+}
+
+#resume h1 {
+  color: var(--almond);
+}
 
 #splash {
   background-image: url(./img/yellowPencil.jpg);
