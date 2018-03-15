@@ -19,11 +19,10 @@
       <div class="navbar-fixed">
         <nav  class="teal darken-3">
           <div class="nav-wrapper">
-            <a href="#!" class="brand-logo playfair">Shaun White</a>
+            <a class="brand-logo playfair">Shaun White</a>
             <ul class="right hide-on-med-and-down">
               <li><a href="#about" class="tooltipped" data-position="bottom" data-tooltip="about me"><i class="material-icons">person</i></a></li>
-              <li><a href="#apps" class="tooltipped" data-position="bottom" data-tooltip="progamming"><i class="material-icons">code</i></a></li>
-              <li><a href="#art" class="tooltipped" data-position="bottom" data-tooltip="design"><i class="material-icons">brush</i></a></li>
+              <li><a href="#folio" class="tooltipped" data-position="bottom" data-tooltip="portfolio"><i class="material-icons">view_module</i></a></li>
               <li><a href="#resume" class="tooltipped" data-position="bottom" data-tooltip="resume"><i class="material-icons">format_align_justify</i></a></li>
               <li><a href="#contact" class="tooltipped" data-position="bottom" data-tooltip="contact"><i class="material-icons">email</i></a></li>
             </ul>
@@ -31,32 +30,41 @@
         </nav>
       </div>
 
-      <div id="splash">
-        <div id="intro-banner">
-          <div class="section no-pad-bot">
-            <div class="container">
-              <div class="row">
-                <h1 class="header col s8 offset-s3 text-lighten-2 playfair">I'm a Full Stack Developer</h1>
-                <h3 class="header col s8 offset-s3 lighten">
-                  I'm also a designer. <br/> I believe in Form &amp; Function.
-                </h3>
-                <a href="./img/A30_18_WDI_Resume.pdf" target="_blank" id="download-button" class="btn-large waves-effect waves-light teal col offset-s9">My Resume</a>
-              </div>
-            </div>
+    <div id="splash" class="section">
+      <div class="section no-pad-bot">
+        <div class="container">
+        <div class="row">
+            <h1 class="header col s9 offset-s5 text-lighten-2 playfair">I'm a <br /> Full Stack <br /> Developer</h1>
+            <h3 class="header col s9 offset-s5 lighten">
+              I'm also a designer. <br/> I believe in Form &amp; Function.
+            </h3>
+            <a href="./img/C12_18_webResume.pdf" target="_blank" id="download-button" class="btn-large waves-effect waves-light teal col offset-s9">View My Resume</a>
           </div>
-
         </div>
+      </div>
+    </div> <!-- close splash -->
 
+    <div class="section no-pad-bot teal lighten-2">
       <div class="container">
-        <div class="section">
+        <div class="section scrollspy" id="about">
           <div class="row" >
-            <h5 class="header col s8 offset-s3 lighten">
+            <!-- <div class="col s3">
+              <img class=" " src="./img/s_t_whiteProfile.jpg">
+            </div> -->
+            <h5 class="header col s7 offset-s2 lighten">
               I have a background in Graphic Design.
               I have been moving in this direction for a while.  From tinkering as a child to working in architecture and advertising.
               I have always pursuing both problem solving and artistic interest and web development is a great combination of the two.
               After General Assembly I will be a developer who can design.
             </h5>
-            <h6 class="header col s8 offset-s3 lighten">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="section">
+          <div class="row" >
+
+            <h6 class="col s8 offset-s2 lighten">
               <table>
                 <tbody>
                   <tr>
@@ -84,9 +92,10 @@
                     <td>NODE</td>
                   </tr>
                   <tr>
+                    <td>WORDPRESS</td>
                     <td>SQL</td>
-                    <td>EMBER</td>
-                    <td>MONOGO</td>
+                    <td>MONGO</td>
+                    <td>BASH/SHELL</td>
                   </tr>
                 </tbody>
               </table>
@@ -94,14 +103,15 @@
           </div>
         </div>
       </div>
-    </div> <!-- close splash -->
+
+    </div> <!-- CLose about Section -->
+
       <div id="projects" >
         <div class="section no-pad-bot">
           <div class="container">
-            <div class="row">
-              <h1 class="header s6 text-lighten-2 playfair  ">Projects</h1>
+            <div class="row section scrollspy" id="folio">
+              <h1 class="header s6 text-lighten-2 playfair">Programming & Design</h1>
               <h5 class="header col s6 lighten">
-                Here are few samples of some code and design projects
               </h5>
             </div>
           </div>
@@ -111,13 +121,17 @@
           <div class="row">
             <!--  Project ONE Card -->
             <div class="col s12 m6 l6">
-              <div class="card horizontal">
+              <div class="card large">
                 <div class="card-image">
                   <img src="./img/ticTacToe.png" alt="Screen shot of Tic Tac Toe App">
                 </div>
                 <div class="card-content">
                   <span class="card-title playfair">Tic-Tac-Toe</span>
-                  <p>I styled the front-end and wrote the game logic for this app.</p>
+                  <p>
+                    I styled the front-end with SCSS and wrote the game logic in
+                    javascript (ES6) for this app.  This project was great for
+                    me to really time box my self and fight feature creep.
+                  </p>
                 </div>
                 <div class="card-action" >
                   <a href="https://github.com/skinnybuff/tic-tac-toe" class="tooltipped" data-position="top" data-tooltip="git repo"><i class="material-icons">code</i></a>
@@ -127,13 +141,18 @@
             </div>
             <!--  Project TWO Card -->
             <div class="col s12 m6 l6">
-              <div class="card horizontal">
+              <div class="card large">
                 <div class="card-image">
                   <img src="./img/localLeague.png" alt="Screen shot of the Local League App">
                 </div>
                 <div class="card-content">
                   <span class="card-title playfair">Local League</span>
-                  <p>This Full stack app is for community sports teams to keep records.</p>
+                  <p>
+                    This Full stack app is for community sports teams to keep records.
+                    Building this in a 4 day sprint really froced me to be specific
+                    about the MVP. This was built with JS, Handlebars, Mongo & Express
+
+                  </p>
                 </div>
                 <div class="card-action">
                   <a href="https://github.com/skinnybuff/local-league-frontend" class="tooltipped" data-position="top" data-tooltip="git repo"><i class="material-icons">code</i></a>
@@ -143,7 +162,7 @@
             </div>
             <!--  Project THREE Card -->
             <div class="col s12 m6 l6">
-              <div class="card horizontal">
+              <div class="card large">
                 <div class="card-image">
                   <img src="./img/bitStash.png" alt="Screen shot of the BitStash App">
                 </div>
@@ -159,12 +178,44 @@
             </div>
             <!--  Project FOUR Card -->
             <div class="col s12 m6 l6">
-              <div class="card horizontal">
+              <div class="card large">
                 <div class="card-image">
-                  <img src="https://picsum.photos/400/200">
+                  <img src="./img/happyHut.png">
                 </div>
                 <div class="card-content">
-                  <span class="card-title playfair">Capstone Project</span>
+                  <span class="card-title playfair">Happy Hut</span>
+                  <p>This is my capstone   project its AWESOME!.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#" class="tooltipped" data-position="top" data-tooltip="git repo"><i class="material-icons">code</i></a>
+                  <a href="#" class="tooltipped" data-position="top" data-tooltip="view site"><i class="material-icons">visibility</i></a>
+                </div>
+              </div>
+            </div>
+            <!--  Project FIVE Card -->
+            <div class="col s12 m6 l6">
+              <div class="card large">
+                <div class="card-image">
+                  <img src="./img/triRexLogo.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title playfair">Triranysaurs Rex</span>
+                  <p>This is my capstone   project its AWESOME!.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#" class="tooltipped" data-position="top" data-tooltip="git repo"><i class="material-icons">code</i></a>
+                  <a href="#" class="tooltipped" data-position="top" data-tooltip="view site"><i class="material-icons">visibility</i></a>
+                </div>
+              </div>
+            </div>
+            <!--  Project SIX Card -->
+            <div class="col s12 m6 l6">
+              <div class="card large">
+                <div class="card-image">
+                  <img src="./img/spencerSmallJobs.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title playfair">Spencer Small Jobs</span>
                   <p>This is my capstone   project its AWESOME!.</p>
                 </div>
                 <div class="card-action">
@@ -180,19 +231,21 @@
 
     </div>
   </div>
-      <div class="section no-pad-bot teal lighten-2">
+
+    <div class="section no-pad-bot teal lighten-2">
 
       <div class="container">
-        <div class="row" id="resume">
-          <h1 class="header text-lighten-2 playfair">Resume</h1>
-          <a href="./img/A30_18_WDI_Resume.pdf" id="download-button" class="btn-large waves-effect waves-light teal" download>Download</a>
+        <div class="row section scrollspy" id="resume">
+          <h1 class="header text-lighten-2 playfair">Work Experience</h1>
+          <h6></h6>
+          <a href="./img/C12_18_webResume.pdf" id="download-button" class="btn-large waves-effect waves-light teal" download>Download</a>
         </div>
         <br><br>
       </div>
 
-      <div class="container  smoothscroll">
+      <div class="container">
         <div class="section">
-          <div class="row">
+          <div class="row section scrollspy" id="contact">
             <div class="col s4">
               <h4>Artist / Illustrator</h4>
               <p>Fun Enterpises<br/>
@@ -225,26 +278,25 @@
                 </div>
           </div>
         </div>
-      </div> <!-- CLose resume Section -->
-    </div>
+      </div>
+    </div> <!-- CLose resume Section -->
 
 
     <footer class="page-footer teal">
       <div class="container">
         <div class="row">
+          <div class="col  s3 offset-s2">
+            <h5 class="white-text">Say Hello</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Linked</a></li>
+              <li><a class="white-text" href="#!">Git Hub</a></li>
+              <li><a class="white-text" href="#!">Twitter</a></li>
+            </ul>
+          </div>
           <div class="col s6">
             <p class="grey-text text-lighten-4">Creativity is a habit, and the best creativity is the result of good work habits.
               <br/> <span>-Twyla Tharp</span></p>
             <h5 class="white-text">Thanks For Visting!</h5>
-          </div>
-          <div class="col  s3 offset-s2">
-            <h5 class="white-text">Say Hello</h5>
-            <ul>
-              <li><a class="white-text" href="#!">Email</a></li>
-              <li><a class="white-text" href="#!">Git Hub</a></li>
-              <li><a class="white-text" href="#!">Linked</a></li>
-              <li><a class="white-text" href="#!">Twitter</a></li>
-            </ul>
           </div>
         </div>
       </div>
