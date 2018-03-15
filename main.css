@@ -73,6 +73,7 @@ body {
 .sage {
   background: var(--sage)
 }
+
 #projects {
   background: linear-gradient(white, var(--almond));
 }
@@ -85,6 +86,11 @@ body {
   background-image: url(./img/yellowPencil.jpg);
   background-size: cover;
 }
+
+#splash h1{
+  font-size: 126px;
+}
+
 
 table td{
   font-weight: 800;
