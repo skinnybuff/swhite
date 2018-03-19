@@ -74,12 +74,24 @@ body {
   background: var(--sage)
 }
 
+.social {
+  height: 32px;
+  width: 32px;
+  margin-right: 12px;
+}
+
 #projects {
   background: linear-gradient(white, var(--almond));
 }
 
-#resume h1 {
-  color: var(--almond);
+#about h1 {
+  color: white;
+  text-shadow: var(--fog) 2px 2px;
+}
+
+#skills h1{
+  color: white;
+  text-shadow: var(--fog) 2px 2px;
 }
 
 #splash {
@@ -89,8 +101,13 @@ body {
 
 #splash h1{
   font-size: 126px;
+  text-shadow: var(--fog) 2px 2px;
 }
 
+.headshot{
+    width: 150  px;
+    height: 150px;
+}
 
 table td{
   font-weight: 800;
